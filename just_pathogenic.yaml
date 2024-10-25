@@ -1,0 +1,36 @@
+title: Pathogenic postagregator
+version: 0.1.0
+type: postaggregator
+name: just_pathogenic
+level: variant
+input_level: variant
+description: Pathogenic risks postagregator for longevity report.
+requires:
+- dbsnp
+- clinvar
+- sift
+- cadd_exome
+- revel
+- clinpred
+- omim
+- ncbigene
+output_columns:
+- name: col1
+  title: clo1
+  type: string
+  width: 1
+  filterable: false
+  hidden: true
+  desc: dummy column
+developer:
+  name: "Alex Karmazin"
+  organization: "Just-DNA_seq"
+  email: "karmazzinalex@gmail.com"
+  website: "https://github.com/dna-seq/opencravat-longevity"
+  citation: ""
+tags:
+- variants
+- filtering
+- pathogenicity
+release_note:
+0.1.0: initial version
