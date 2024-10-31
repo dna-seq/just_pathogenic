@@ -100,7 +100,7 @@ class CravatPostAggregator(BasePostAggregator):
 
         task = (
             input_data['base__hugo'],
-            input_data['dbsnp__rsid'],
+            #input_data['dbsnp__rsid'],
             input_data['base__cchange'],
             f"{input_data['base__alt_base']}/{input_data['base__ref_base']}",
             input_data['base__so'],
