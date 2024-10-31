@@ -1,5 +1,5 @@
 title: Pathogenic postagregator
-version: 0.1.0
+version: 0.1.1
 type: postaggregator
 name: just_pathogenic
 level: variant
@@ -14,23 +14,15 @@ requires:
 - clinpred
 - omim
 - ncbigene
-output_columns:
-- name: col1
-  title: clo1
-  type: string
-  width: 1
-  filterable: false
-  hidden: true
-  desc: dummy column
 developer:
   name: "Alex Karmazin"
-  organization: "Just-DNA_seq"
-  email: "karmazzinalex@gmail.com"
-  website: "https://github.com/dna-seq/opencravat-longevity"
+  organization: "Just-DNA-Seq"
+  email: "karmazinalex@gmail.com"
+  website: "https://dna-seq.github.io/"
   citation: ""
 tags:
 - variants
 - filtering
 - pathogenicity
 release_note:
-0.1.0: initial version
+0.1.1: initial version
