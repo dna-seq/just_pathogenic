@@ -12,13 +12,9 @@ ov module install just_pathogenic
 ```
 From a direct link on GitHub:
 ```bash
-ov module install https://github.com/dna-seq/just_pathogenic
+ov module install just_pathogenic --url https://github.com/dna-seq/just_pathogenic/tree/main
 ```
 
-Just run (without installing):
-```bash
-ov run -p just_pathogenic
-```
 
 ## Debugging notes
 
