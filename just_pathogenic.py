@@ -85,7 +85,6 @@ class CravatPostAggregator(BasePostAggregator):
 
         sql = """INSERT INTO pathogenic (
             gene,
-            rsid,
             cdnachange,
             genotype,
             sequence_ontology,
@@ -96,7 +95,7 @@ class CravatPostAggregator(BasePostAggregator):
             omim_id,
             clinvar_id,
             ncbi_desc
-        ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)"""
+        ) VALUES (?,?,?,?,?,?,?,?,?,?,?)"""
 
         task = (
             input_data['base__hugo'],
