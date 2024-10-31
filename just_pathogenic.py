@@ -48,9 +48,9 @@ class CravatPostAggregator(BasePostAggregator):
         if cadd_phred is not None and float(cadd_phred) > 10:
             passes_first_filter = True
 
-        sift_pred = input_data.get('sift__prediction')
-        if sift_pred == "Damaging":
-            passes_first_filter = True
+        #sift_pred = input_data.get('sift__prediction')
+        #if sift_pred == "Damaging":
+        #    passes_first_filter = True
 
         revel_score = input_data.get('revel__score')
         if revel_score is not None and float(revel_score) > 0.5:
@@ -90,7 +90,6 @@ class CravatPostAggregator(BasePostAggregator):
             genotype,
             sequence_ontology,
             cadd_phred,
-            sift_pred,
             revel_score,
             clinpred_score,
             clinvar_sig,
@@ -106,7 +105,6 @@ class CravatPostAggregator(BasePostAggregator):
             f"{input_data['base__alt_base']}/{input_data['base__ref_base']}",
             input_data['base__so'],
             cadd_phred,
-            sift_pred,
             revel_score,
             clinpred_score,
             clinvar_sig,

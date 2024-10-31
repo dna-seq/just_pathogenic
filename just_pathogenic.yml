@@ -8,7 +8,6 @@ description: Pathogenic risks postagregator for longevity report.
 requires:
 - dbsnp
 - clinvar
-- sift
 - cadd_exome
 - revel
 - clinpred
